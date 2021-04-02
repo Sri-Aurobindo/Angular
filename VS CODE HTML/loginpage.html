@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .middle{
+            text-align: center;
+            border-radius: 100px;
+            margin: 10px;
+        }
+        h2{
+            color:whitesmoke;
+        }
+        b1{
+           color:red;
+                    }
+        b2{
+            color: blue;
+        }
+        body{
+            background-image: url("loginbg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <script type="text/javascript">
+    function validate()
+    {
+      // alert("function call")
+      var user = document.getElementById('inputEmail3').value;
+      var pass = document.getElementById('password').value;
+      if(user.length==0)
+      {
+        // alert("Please Enter the username!");
+        // document.write("Username invalid");
+        document.getElementById("e1").innerHTML="Username required";
+        document.getElementById("e2").innerHTML="";
+        return false;
+      }
+      else if(pass.length==0)
+      {
+        document.getElementById("e2").innerHTML="Password required";
+        document.getElementById("e1").innerHTML="";
+        return false;
+      }
+      return true;
+    }
+
+    </script>
+</head>
+<body>
+    
+    <h2 class="middle">Reviewers G<b1>o</b1><b2>o</b2>gle</h2>
+    <form action="dashboard.html" onsubmit="return validate()">
+      <div class="container" >
+        <label for="inputEmail3" class="col-sm-2 col-form-label" style="color: whitesmoke;">UserName</label>
+        <div class="col-sm-10">
+          <input type="text"  id="inputEmail3" placeholder="UserName">
+          <span id="e1" style='color: aliceblue;'></span>
+        </div><br>
+        <label for="password" class="col-sm-2 col-form-label" style="color: whitesmoke;">Password</label>
+        <div class="col-sm-10">
+          <input type="password"  id="password" placeholder="Paassword">
+          <span id="e2" style='color: aliceblue;'></span>
+        </div>
+      </div>
+      <div class="middle" style="margin: 20px;">
+          <input type="submit" value="sign in" class="btn btn-primary">
+      </div>
+    </form>
+</body>
+</html>

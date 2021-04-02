@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: small;
+            width: max-content;
+            height: max-content;
+            transition: font-size 1s;
+            border: 2px orange;
+            border-radius: 50px;
+            text-align: center;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+        }
+        div:hover{
+           font-size: xx-large;
+           /*background-color: aqua;*/
+        }
+        @keyframes anime{
+            /*from{background-color: palegreen;}
+            to{background-color: rebeccapurple;}*/
+            0%{background-color: red;transform: rotate(72deg);margin-left: 20px;}
+            25%{background-color: yellow;transform: rotate(144deg);margin-left: 60px}
+            50%{background-color: blue;transform: rotate(216deg);margin-left: 100px}
+            75%{background-color: green;transform: rotate(288deg);margin-left: 140px}
+            100%{background-color: hotpink;transform: rotate(360deg);margin-left: 180px}
+        }
+    </style>
+</head>
+<body>
+    <div>simple hover transition effect</div>
+</body>
+</html>

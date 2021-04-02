@@ -1,0 +1,25 @@
+div{
+    border: solid 2px royalblue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+   
+}
+#d1{
+    background-color: gold;
+   
+}
+#d2{
+    background-color: mediumaquamarine;
+   
+}
+#d3{
+    background-color: peru;
+    
+    
+   
+}
+#d4{
+    background-color: darkgreen;
+    
+}

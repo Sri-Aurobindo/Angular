@@ -1,0 +1,26 @@
+.parent{
+    border: solid 2px royalblue;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: solid 3px fuchsia;
+}
+
+#one{
+    background-color: gold;
+    display: inline;
+}
+#two{
+    background-color: mediumaquamarine;
+    display: inline;
+}
+#three{
+    background-color: peru;
+    float: left;
+   
+}
+#four{
+    background-color: darkgreen;
+    float: right;
+}
