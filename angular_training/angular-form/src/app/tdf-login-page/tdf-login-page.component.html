@@ -1,0 +1,115 @@
+<div>
+    <h2>login page component</h2>
+   <form #loginRef="ngForm" (ngSubmit)="checkUser(loginRef.value)">
+      Username : <input type="text" name=user ngModel required #useRef="ngModel" />
+        <div *ngIf = "useRef.errors && (useRef.dirty || useRef.touched)">
+            <span>
+                username is required
+            </span>
+        </div>
+        
+        <br/>
+        Password : <input type="password" name = password ngModel required #passRef="ngModel">
+        <div *ngIf = "passRef.errors && (passRef.dirty || passRef.touched)">
+            <span>
+                password is required
+            </span>
+            </div>
+        <br/>
+        <input type="submit" value="submit">    
+        <input type="reset" value=clear> {{loginRef.valid}}
+    <p>{{msg}}</p>
+   
+
+   <!-- Firstname : <input type="text" name = fname ngModel required #fnameRef="ngModel"><br/>
+        <div *ngIf = "fnameRef.errors && (fnameRef.dirty || fnameRef.touched)">
+            <span>
+                firstname is required
+            </span>
+        </div>
+        Lastname : <input type="text"  name = lname ngModel required #lnameRef="ngModel"><br/>
+        <div *ngIf = "lnameRef.errors && (lnameRef.dirty || lnameRef.touched)">
+            <span>
+                lastname is required
+            </span>
+        </div>
+
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender"  ngModel  #maleRef="ngModel">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" ngModel  #femaleRef="ngModel">
+        <label for="female">Female</label><br>
+
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" #gender required ngModel value = "male">Male
+        <input type="radio" id="female" name="gender" ngModel #gender required ngModel value="female">Female
+        <div *ngIf="gender.oninvalid">
+            <span>gender required</span>
+        </div>
+        <br>
+
+        <p>Please select your Hobbies:</p>
+        <input type="checkbox" id="painting" name="painting1" #hobbies required ngModel>Painting
+        <input type="checkbox" id="driving" name="driving" #hobbies required ngModel>
+        <label for="driving"> Driving</label><br>
+        <input type="checkbox" id="WatchingMovies" name="WatchingMovies" #hobbies required ngModel>
+        <label for="Watching Movies"> Watching Movies</label><br><br>
+    
+        <label for="city">Choose a city:</label>
+        <select name="city" id="city" #city required ngModel>
+        <option value="bangalore">bangalore</option>
+        <option value="chennai">chennai</option>
+        <option value="mumbai">mumbai</option>
+        <option value="delhi">delhi</option>
+        </select>
+        <br><br>
+    
+        <input type="submit" value="submit" >    
+        <input type="reset" value=clear>-->
+    </form>
+
+    {{msg}}
+    {{fname}}
+
+
+   <!-- <form #loginRef="ngForm" (ngSubmit)="checkUser(loginRef.value)">
+        Firstname : <input type="text" name = fname ngModel required #fnameRef="ngModel"><br/>
+        <div *ngIf = "fnameRef.errors && (fnameRef.dirty || fnameRef.touched)">
+            <span>
+                firstname is required
+            </span>
+        </div>
+        Lastname : <input type="text"  name = lname ngModel required #lnameRef="ngModel"><br/>
+        <div *ngIf = "lnameRef.errors && (lnameRef.dirty || lnameRef.touched)">
+            <span>
+                lastname is required
+            </span>
+        </div>
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <p>Please select your Hobbies:</p>
+        <input type="checkbox" id="painting" name="painting1" value="painting">
+        <label for="painting"> Painting</label><br>
+        <input type="checkbox" id="driving" name="driving" value="driving">
+        <label for="driving"> Driving</label><br>
+        <input type="checkbox" id="WatchingMovies" name="WatchingMovies" value="Watching Movies">
+        <label for="Watching Movies"> Watching Movies</label><br><br>
+
+        <label for="city">Choose a city:</label>
+        <select name="city" id="city">
+        <option value="bangalore">bangalore</option>
+        <option value="chennai">chennai</option>
+        <option value="mumbai">mumbai</option>
+        <option value="delhi">delhi</option>
+        </select>
+        <br/>
+        <label for="skillset">Skillset:</label>
+        <input type="textarea" name="skillset" id="">
+        <br/>
+        <input type="button" value="submit">
+    </form> -->
+</div>

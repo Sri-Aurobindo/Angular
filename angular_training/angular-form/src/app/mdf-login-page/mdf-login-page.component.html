@@ -1,0 +1,14 @@
+<div>
+    <p>mdf-login-page works!</p>
+    <form [formGroup]=loginRef1>
+        <label>Username :</label>
+        <input type="text" formControlName=user><br/>
+        <label>Password :</label>
+        <input type="text" formControlName=password><br/>
+        <input type="button" value="sign in!" (click)="checkuser1()">
+        {{msg}}
+    </form>
+</div>
+
+
+

@@ -1,0 +1,19 @@
+<p>event-binding works!</p>
+<input type="button" value="click here" (click)="fun()"><br/>
+
+<p>{{msg}}</p><br/>
+Name : <input type="text" #refName>
+<input type="button" value="passvalue" (click)="passvalue(refName.value)">
+
+
+<h2>Calculator</h2>
+Value 1 : <input type=text #value1><br/>
+Value 2 : <input type="text" #value2><br/>
+<input type="button" value="add" (click)="add(value1.value,value2.value)"><br/>
+<input type="button" value="sub" (click)="sub(value1.value,value2.value)"><br/>
+Result : <input type="text" [value] = result><br/>
+
+
+
+
+

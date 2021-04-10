@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var str1= "welcome to string functionns";
+        document.write(str1);
+        var str2 = new String("Welcome to JavaScript Training")
+        document.write(str1+"<br>");
+        document.write(str2+"<br>");
+        document.write(str1.length+"<br>");
+        document.write(str1.toUpperCase()+"<br>");
+        document.write(str1.toLowerCase()+"<br>");
+        document.write(str1.substring (4)+"<br>"); 
+        document.write(str1.substring(4,10)+"<br>");
+       document.write(str1.indexOf('e')+"<br/>")
+        var dd = new Date();
+        document.write("Date Details " +dd);
+        document.write("<br/> Date "+dd.getDate());
+        document.write("<br/> Month "+dd.getMonth())
+        dd.setMonth(dd.getMonth(+1)); 
+        document.write("<br/> Month "+dd.getMonth())
+        document.write("<br/> Year "+dd.getYear())
+        document.write("<br/> Month "+dd.getFullYear())
+        document.write("<br/> Hour "+dd.getMonth())
+
+        var obj1 = [10,20,30,40,50];
+
+var obj2 = new Array();
+
+var obj3 = new Array(10,20,30,40);
+
+document.write("<br/>"+obj1.length+"<br/>")
+
+document.write(obj2.length+"<br/>")
+ document.write(obj3. length+"<br/>")
+
+obj1.push(60);
+
+obj1. push(70);
+
+document.write(obj1.length);
+
+
+       
+    </script>
+</body>
+</html>

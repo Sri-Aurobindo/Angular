@@ -1,0 +1,40 @@
+<p>fake works!</p>
+<input type="button" value="click here" (click)=fun()><br/>
+{{msg}}<br/>
+<input type="button" value="call http get" (click)=callFake()><br/>
+<input type="button" value="Load the Data" (click)="loadInTable()"/>
+<div *ngIf="f1">
+    <table border="1">
+         <tr>
+             <th>UserId</th>
+             <th>Id</th>
+             <th>Title</th>
+             <th>Completed</th>
+         </tr>
+         <tr *ngFor="let ff of fakeData">
+                <td>{{ff.userId}}</td>
+                <td>{{ff.id}}</td>
+                <td>{{ff.title}}</td>
+                <td>{{ff.completed}}</td> 
+         </tr>
+    </table> 
+</div>
+<br/>
+<input type="button" value="Load the Data" (click)="loadInTable1()"/>
+<div *ngIf="f2">
+    <table border="1">
+         <tr>
+             <th>Id</th>
+             <th>Name</th>
+             <th>Salary</th>
+             <th>Gender</th>
+         </tr>
+         <tr *ngFor="let f of fakeData">
+                <td>{{f.id1}}</td>
+                <td>{{f.name1}}</td>
+                <td>{{f.salary1}}</td>
+                <td>{{f.gender1}}</td> 
+         </tr>
+    </table> 
+</div>
+

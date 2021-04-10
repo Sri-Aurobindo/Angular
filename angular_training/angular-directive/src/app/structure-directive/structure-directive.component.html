@@ -1,0 +1,55 @@
+<p>structure-directive works!</p>
+<p *ngIf="true">welcome</p>
+<p *ngIf="false">not welcome</p>
+<div *ngIf="flag">
+    <p>flag passed</p>
+</div>
+
+<input type="button" [value]="show" (click)="display()">
+
+<ul>
+    <li *ngFor= "list consist of " >{{std}}
+    </li>
+</ul>
+<input type="button" value="show employee details" (click)="fun()"/><br/>
+
+<div *ngIf="flag">
+
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </table>
+</div>
+
+//adding  product
+
+Pid : <input type="text"  #pid><br/>
+Pname : <input type = text #pname><br/>
+Price : <input type = text #price><br/>
+<input type="button" value="add" (click)="add(pid.value,pname.value,price.value)"><br/>
+<input type="button" value="clear" (click)="clear()"/><br/>
+<input type="button" value="show product details" (click)="display1()"/><br/>
+
+<div *ngIf="flag2">
+
+    <table border="1">
+        <tr>
+            <th>PId</th>
+            <th>PName</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let p of products">
+            <td>{{p.pid}}</td>
+            <td>{{p.pname}}</td>
+            <td>{{p.price}}</td>
+        </tr>
+    </table>
+</div>

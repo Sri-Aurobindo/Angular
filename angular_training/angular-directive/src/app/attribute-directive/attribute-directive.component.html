@@ -1,0 +1,18 @@
+<div>
+    //style atrubute
+<p>attribute-directive works!</p>
+<p [ngStyle] = "{'color':'red','font-size':'10px'}"> ngStyle attribute of red color</p>
+<p [ngStyle] = "styleData"> ngStyle attribute of red color</p>
+
+//class style
+
+<p class='fontfamily bgfamily'>attribute of red</p>
+<p [ngClass] ="{fontfamily:true,bgfamily:true}" >attribute of red</p>
+</div>
+
+<p [ngClass] ="{bg1:f1,bg2:f2}">changing the bg color effect</p><br/>
+<input type="button" value="click" (click)=change()>
+
+
+
+

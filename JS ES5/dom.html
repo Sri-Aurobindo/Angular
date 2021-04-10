@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function store()
+        {
+            /*var tagcreation = document.createElement("p") // p tag is created
+            var content = document.createTextNode(" welcome to p tag") // content 
+            tagcreation.appendChild(content)
+
+            var divmain = document.getElementById("content");
+            divmain.appendChild(tagcreation)*/
+
+
+            var name = document.getElementById("name").value;
+            var ids = document.getElementById("no").value;
+            var designation = document.getElementById("designation").value;
+            var salary = eval(document.getElementById("salary").value);
+            
+            var tagcreation = document.createElement("p")
+           switch(designation)
+           {
+               case "manager":
+                    salary = 5000+salary;
+                    break;
+               case "programmer":
+                    salary = 3000+salary;
+                    break;
+                default:
+                    salary = 1500+salary;
+               
+           }
+           var content1 = document.createTextNode(name+"   ") // content 
+           var content2= document.createTextNode(ids+"   ")
+           var content3 = document.createTextNode(designation+"   ")
+           var content4 = document.createTextNode(salary+"   ")
+           
+           tagcreation.appendChild(content1);
+           tagcreation.appendChild(content2);
+           tagcreation.appendChild(content3);
+           tagcreation.appendChild(content4);
+
+           var divmain = document.getElementById("content");
+           divmain.appendChild(tagcreation);
+divmain.setAttribute("style","color:red")
+           
+
+
+        }
+    </script>
+</head>
+<body>
+    Name : <input type="text" id=name><br/>
+    Id : <input type="text" id=no><br/>
+    Designation : <input type="text" id=designation><br/>
+    Salary : <input type="text" id=salary><br/>
+    <input type="button" value="store" id="add" onclick="store()" />
+    <div id="content"></div>
+</body>
+</html>
